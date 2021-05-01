@@ -1,0 +1,81 @@
+/*parte abaixo é dedicada à estilização dos posts*/
+
+.preto{
+    color:black;
+}
+
+span{
+    font-style:italic;
+}
+
+
+.comentarios > h3{
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 69px 203px;
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+form > div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form label{
+    color:black;
+    font-size:14px;
+    line-height: 19px;
+    margin-bottom: 8px;
+}
+
+form input{
+    flex-grow: 1;
+    border-radius: 2px;
+}
+
+
+.nome{
+    grid-template: 1 / 1 / 2 /2 ;
+    
+}
+
+.email{
+    grid-template: 1 / 2 / 2 /3 ;
+    
+}
+
+.comentario{
+    grid-row: 2/3;
+    grid-column: 1/ span 2;  
+}
+
+.botao{
+    grid-column: 1/ span 2;  
+    display: flex;
+    align-items: flex-end;
+}
+
+form button{
+    background: #FE0078;
+    border-radius: 20px;
+    border:0;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 118px;
+    height: 43px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+
